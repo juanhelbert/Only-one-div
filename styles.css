@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #27292d;
+}
+
+.welcome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.welcome span {
+  font-size: 100px;
+  letter-spacing: 15px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 8px 8px #f4b809, 20px 20px #000000;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.welcome p {
+  color: #fff;
+  padding: 5vh 15px;
+  font-size: 20px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .welcome span {
+    font-size: 70px;
+    padding: 0 15px;
+  }
+  .welcome p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome p {
+    text-align: left;
+  }
+}
+
+/* ________ Entry styles ________ */
+
+.entry {
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.entry div {
+  position: relative;
+}
+
+.entry div:before,
+.entry div:after {
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+/* ________ Only one div styles ________ */
+
+#frank {
+  background-color: #aaa;
+}
+
+#frank div {
+  width: 130px;
+  height: 160px;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) center 87% / 60px 20px,
+    linear-gradient(to right, seagreen, seagreen) center / 60px 100%,
+    linear-gradient(rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 50%) center 94% / 80px 10px,
+    radial-gradient(30px 30px, black, transparent),
+    radial-gradient(circle, #21653f 25%, seagreen 25%, seagreen 50%, transparent 50%) 0 60% / 30px 30px,
+    radial-gradient(#216537 25%, seagreen 25%, seagreen 50%, transparent 50%) 100% 60% / 30px 30px;
+  background-repeat: no-repeat;
+}
+
+#frank div:before {
+  width: 100px;
+  height: 135px;
+  left: 15px;
+  background: seagreen;
+  border-radius: 6px 6px 15px 15px;
+  background-image: linear-gradient(#333333, black), linear-gradient(seagreen, seagreen),
+    radial-gradient(transparent 40%, #216438 40%, #216438 50%, transparent 50%),
+    radial-gradient(black 15%, #ff9900 15%, #ff9900 30%, white 30%, white 45%, transparent 45%),
+    radial-gradient(black 15%, #ff9900 15%, #ff9900 30%, white 30%, white 45%, transparent 45%),
+    linear-gradient(to bottom, black, black), radial-gradient(ellipse, black 50%, transparent 50%),
+    radial-gradient(ellipse, black 50%, transparent 50%), radial-gradient(black 50%, transparent 50%);
+  background-size: 40px 2px, 22px 16px, 30px 30px, 25px 25px, 25px 25px, 100% 20px, 15px 40px, 17px 40px, 15px 20px;
+  background-position: center 120px, center 89px, center 85px, 20px 70px, 55px 70px, 0 0px, -5px -3px, 6px -7px,
+    103% 11px;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in-out;
+}
+
+#frank div:after {
+  width: 30px;
+  height: 10px;
+  left: 32px;
+  top: 67px;
+  right: 0;
+  border-radius: 2px;
+  box-shadow: 36px 0px 0px 0px;
+  background-color: black;
+  transition: 0.2s ease-in-out;
+}
+
+#frank div:hover:before {
+  background-size: 20px 2px, 22px 16px, 30px 30px, 25px 25px, 25px 25px, 100% 20px, 15px 40px, 17px 40px, 15px 20px;
+}
+
+#frank div:hover:after {
+  top: 60px;
+}
