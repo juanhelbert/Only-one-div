@@ -84,7 +84,59 @@ body {
   position: absolute;
 }
 
-/* ________ Only one div styles ________ */
+/* ________ Phone styles ________ */
+
+#phone {
+  background-color: #ccc;
+}
+
+#phone div {
+  width: 110px;
+  height: 210px;
+  border-radius: 12px;
+  border: 4px solid #010101;
+  background-image: linear-gradient(106deg, #000000bf 44%, rgba(0, 0, 0, 0.65) 40%, #000000bf 95%);
+  transition: 0.2s ease-in-out;
+}
+
+#phone div:before {
+  width: 42px;
+  height: 6px;
+  background-color: #010101;
+  left: 30px;
+  top: 0px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-image: radial-gradient(
+      circle at center 35%,
+      #cccccc 0%,
+      #001736 2%,
+      #001736 5%,
+      #676f77 5%,
+      #676f77 6%,
+      transparent 10%,
+      transparent 10%
+    ),
+    radial-gradient(circle at 18% 35%, rgba(70, 70, 70, 0.8) 2%, transparent 4%, transparent 100%);
+}
+
+#phone div:after {
+  width: 4px;
+  height: 18px;
+  top: 30px;
+  left: -5px;
+  background-color: #010101;
+  border-radius: 8px;
+  box-shadow: 0px 20px 0px 0px, 108px 0px 0px 0px, 108px 15px 0px 0px;
+}
+
+#phone div:hover {
+  transform: scale(1.01) translateY(-5px);
+  box-shadow: 0px 25px 25px -10px #00000066;
+  transition: 0.5s;
+}
+
+/* ________ Frank styles ________ */
 
 #frank {
   background-color: #aaa;
