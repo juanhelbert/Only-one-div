@@ -66,12 +66,13 @@ body {
 /* ________ Entry styles ________ */
 
 .entry {
-  display: flex;
   position: relative;
-  width: 100%;
-  min-height: 50vh;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 30px 15px;
+  min-height: 50vh;
 }
 
 .entry div {
