@@ -59,6 +59,7 @@ body {
 @media only screen and (max-width: 768px) {
   .welcome p {
     text-align: left;
+    padding-top: 70px;
   }
 }
 
