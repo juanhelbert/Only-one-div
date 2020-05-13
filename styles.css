@@ -57,6 +57,15 @@ body {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .entry.three {
+    width: 33.333%;
+  }
+  .entry.two {
+    width: 50%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .welcome p {
     padding-top: 70px;
@@ -95,7 +104,7 @@ body {
 #pokeball div {
   width: 160px;
   height: 160px;
-  border-radius: 70%;
+  border-radius: 50%;
   background-color: white;
   background-image: linear-gradient(#010101, #010101), radial-gradient(#010101 15%, transparent 15%),
     linear-gradient(to top, transparent 50%, rgba(255, 0, 0, 0.9) 50%);
@@ -103,7 +112,7 @@ body {
   background-size: 100% 10px, 100%, 100%;
   background-repeat: no-repeat;
   box-shadow: inset 4px 5px 10px 0px rgba(255, 255, 255, 0.5), inset -4px -5px 10px 0px rgba(0, 0, 0, 0.3);
-  transition: 0.1s ease-in-out;
+  transition: 0.4s cubic-bezier(0.68, -1, 0.27, 2);
 }
 
 #pokeball div:before {
@@ -118,8 +127,7 @@ body {
 }
 
 #pokeball div:hover {
-  cursor: pointer;
-  /* transform: scale(1.01); */
+  border-radius: 25%;
 }
 
 #pokeball div:hover:before {
