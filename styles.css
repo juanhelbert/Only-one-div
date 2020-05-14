@@ -95,45 +95,61 @@ body {
   position: absolute;
 }
 
-/* ________ Pokeball styles ________ */
+/* ________ Frank styles ________ */
 
-#pokeball {
+#frank {
   background-color: #ddd;
 }
 
-#pokeball div {
-  width: 160px;
+#frank div {
+  width: 130px;
   height: 160px;
-  border-radius: 50%;
-  background-color: white;
-  background-image: linear-gradient(#010101, #010101), radial-gradient(#010101 15%, transparent 15%),
-    linear-gradient(to top, transparent 50%, rgba(255, 0, 0, 0.9) 50%);
-  background-position: center;
-  background-size: 100% 10px, 100%, 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) center 87% / 60px 20px,
+    linear-gradient(to right, seagreen, seagreen) center / 60px 100%,
+    linear-gradient(rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 50%) center 94% / 80px 10px,
+    radial-gradient(30px 30px, black, transparent),
+    radial-gradient(circle, #21653f 25%, seagreen 25%, seagreen 50%, transparent 50%) 0 60% / 30px 30px,
+    radial-gradient(#216537 25%, seagreen 25%, seagreen 50%, transparent 50%) 100% 60% / 30px 30px;
   background-repeat: no-repeat;
-  box-shadow: inset -12px -8px 0px rgba(0, 0, 0, 0.2);
-  transition: 0.4s cubic-bezier(0.68, -1, 0.27, 2);
 }
 
-#pokeball div:before {
-  width: 19px;
-  height: 19px;
-  top: 50%;
-  left: 50%;
-  background-image: radial-gradient(#fff 100%, white 100%);
-  transform: translate(-50%, -50%);
-  box-shadow: inset 2px 2px 0 0 #fff, inset -2px -3px 0 0 rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
+#frank div:before {
+  width: 100px;
+  height: 135px;
+  left: 15px;
+  background: seagreen;
+  border-radius: 6px 6px 15px 15px;
+  background-image: linear-gradient(#333333, black), linear-gradient(seagreen, seagreen),
+    radial-gradient(transparent 40%, #216438 40%, #216438 50%, transparent 50%),
+    radial-gradient(black 15%, #ff9900 15%, #ff9900 30%, white 30%, white 45%, transparent 45%),
+    radial-gradient(black 15%, #ff9900 15%, #ff9900 30%, white 30%, white 45%, transparent 45%),
+    linear-gradient(to bottom, black, black), radial-gradient(ellipse, black 50%, transparent 50%),
+    radial-gradient(ellipse, black 50%, transparent 50%), radial-gradient(black 50%, transparent 50%);
+  background-size: 40px 2px, 22px 16px, 30px 30px, 25px 25px, 25px 25px, 100% 20px, 15px 40px, 17px 40px, 15px 20px;
+  background-position: center 120px, center 89px, center 85px, 20px 70px, 55px 70px, 0 0px, -5px -3px, 6px -7px,
+    103% 11px;
+  background-repeat: no-repeat;
+  transition: 0.2s ease-in-out;
 }
 
-#pokeball div:hover {
-  border-radius: 25%;
+#frank div:after {
+  width: 30px;
+  height: 10px;
+  left: 32px;
+  top: 67px;
+  right: 0;
+  border-radius: 2px;
+  box-shadow: 36px 0px 0px 0px;
+  background-color: black;
+  transition: 0.2s ease-in-out;
 }
 
-#pokeball div:hover:before {
-  box-shadow: inset -2px -2px 2px 0 #fff, inset 2px 3px 0 0 rgba(0, 0, 0, 0.2);
-  width: 18px;
-  height: 18px;
+#frank div:hover:before {
+  background-size: 20px 2px, 22px 16px, 30px 30px, 25px 25px, 25px 25px, 100% 20px, 15px 40px, 17px 40px, 15px 20px;
+}
+
+#frank div:hover:after {
+  top: 60px;
 }
 
 /* ________ Phone styles ________ */
@@ -188,59 +204,115 @@ body {
   transition: 0.5s;
 }
 
-/* ________ Frank styles ________ */
+/* ________ Pokeball styles ________ */
 
-#frank {
+#pokeball {
   background-color: #aaa;
 }
 
-#frank div {
-  width: 130px;
+#pokeball div {
+  width: 160px;
   height: 160px;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)) center 87% / 60px 20px,
-    linear-gradient(to right, seagreen, seagreen) center / 60px 100%,
-    linear-gradient(rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 50%) center 94% / 80px 10px,
-    radial-gradient(30px 30px, black, transparent),
-    radial-gradient(circle, #21653f 25%, seagreen 25%, seagreen 50%, transparent 50%) 0 60% / 30px 30px,
-    radial-gradient(#216537 25%, seagreen 25%, seagreen 50%, transparent 50%) 100% 60% / 30px 30px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: linear-gradient(#010101, #010101), radial-gradient(#010101 15%, transparent 15%),
+    linear-gradient(to top, transparent 50%, rgba(255, 0, 0, 0.9) 50%);
+  background-position: center;
+  background-size: 100% 10px, 100%, 100%;
   background-repeat: no-repeat;
+  box-shadow: inset -12px -8px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.4s cubic-bezier(0.68, -1, 0.27, 2);
 }
 
-#frank div:before {
-  width: 100px;
-  height: 135px;
-  left: 15px;
-  background: seagreen;
-  border-radius: 6px 6px 15px 15px;
-  background-image: linear-gradient(#333333, black), linear-gradient(seagreen, seagreen),
-    radial-gradient(transparent 40%, #216438 40%, #216438 50%, transparent 50%),
-    radial-gradient(black 15%, #ff9900 15%, #ff9900 30%, white 30%, white 45%, transparent 45%),
-    radial-gradient(black 15%, #ff9900 15%, #ff9900 30%, white 30%, white 45%, transparent 45%),
-    linear-gradient(to bottom, black, black), radial-gradient(ellipse, black 50%, transparent 50%),
-    radial-gradient(ellipse, black 50%, transparent 50%), radial-gradient(black 50%, transparent 50%);
-  background-size: 40px 2px, 22px 16px, 30px 30px, 25px 25px, 25px 25px, 100% 20px, 15px 40px, 17px 40px, 15px 20px;
-  background-position: center 120px, center 89px, center 85px, 20px 70px, 55px 70px, 0 0px, -5px -3px, 6px -7px,
-    103% 11px;
+#pokeball div:before {
+  width: 19px;
+  height: 19px;
+  top: 50%;
+  left: 50%;
+  background-image: radial-gradient(#fff 100%, white 100%);
+  transform: translate(-50%, -50%);
+  box-shadow: inset 2px 2px 0 0 #fff, inset -2px -3px 0 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+#pokeball div:hover {
+  border-radius: 25%;
+}
+
+#pokeball div:hover:before {
+  box-shadow: inset -2px -2px 2px 0 #fff, inset 2px 3px 0 0 rgba(0, 0, 0, 0.2);
+  width: 18px;
+  height: 18px;
+}
+
+/* ________ Dice styles ________ */
+
+#dice {
+  background-color: #f0e68c;
+}
+
+#dice div {
+  width: 130px;
+  height: 130px;
+  margin-bottom: -50px;
+  margin-left: -60px;
+  background-color: #f0f0f0;
+  background-image: radial-gradient(circle, black 50%, transparent 50%);
+  background-size: 28px 28px;
+  background-position: center;
   background-repeat: no-repeat;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease;
 }
 
-#frank div:after {
-  width: 30px;
-  height: 10px;
-  left: 32px;
-  top: 67px;
-  right: 0;
-  border-radius: 2px;
-  box-shadow: 36px 0px 0px 0px;
-  background-color: black;
-  transition: 0.2s ease-in-out;
+#dice div:before {
+  height: 50px;
+  width: 130px;
+  top: -50px;
+  left: 30px;
+  background-color: white;
+  transform: skewX(-50deg);
+  background-image: radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%),
+    radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%);
+  background-size: 60px 25px;
+  background-position: top right, top left, bottom left, bottom right;
+  background-repeat: no-repeat;
+  transition: 0.4s ease;
 }
 
-#frank div:hover:before {
-  background-size: 20px 2px, 22px 16px, 30px 30px, 25px 25px, 25px 25px, 100% 20px, 15px 40px, 17px 40px, 15px 20px;
+#dice div:after {
+  height: 130px;
+  width: 60px;
+  top: -25px;
+  left: 130px;
+  background-color: #ddd;
+  transform: skewY(-40deg);
+  background-image: radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%),
+    radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%),
+    radial-gradient(black 25%, transparent 25%);
+  background-size: 25px 57px;
+  background-position: top left, top right, bottom left, bottom right, center;
+  background-repeat: no-repeat;
+  transition: 0.4s ease;
 }
 
-#frank div:hover:after {
-  top: 60px;
+#dice div:hover {
+  background-image: radial-gradient(circle, black 50%, transparent 50%),
+    radial-gradient(circle, black 50%, transparent 50%), radial-gradient(circle, black 50%, transparent 50%),
+    radial-gradient(circle, black 50%, transparent 50%), radial-gradient(circle, black 50%, transparent 50%),
+    radial-gradient(circle, black 50%, transparent 50%);
+  background-size: 30px 25px;
+  background-position: 18% 15%, 18% 50%, 18% 85%, 82% 15%, 82% 50%, 82% 85%;
+}
+
+#dice div:hover:before {
+  background-image: radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%),
+    radial-gradient(black 25%, transparent 25%);
+  background-size: 60px 25px;
+  background-position: bottom left, top right, center;
+}
+
+#dice div:hover:after {
+  background-image: radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%);
+  background-size: 25px 57px;
+  background-position: top right, bottom left;
 }
