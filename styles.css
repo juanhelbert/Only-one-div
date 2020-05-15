@@ -248,7 +248,7 @@ body {
 /* ________ Dice styles ________ */
 
 #dice {
-  background-color: #f0e68c;
+  background-color: #f8ed62;
 }
 
 #dice div {
@@ -317,4 +317,61 @@ body {
   background-image: radial-gradient(black 25%, transparent 25%), radial-gradient(black 25%, transparent 25%);
   background-size: 25px 57px;
   background-position: top right, bottom left;
+}
+
+/* ________ Captain styles ________ */
+
+#captain {
+  /* background-color: #dab600; */
+  background-color: #e9d700;
+}
+
+#captain div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(
+    #0472b9 30%,
+    #ce0020 30%,
+    #ce0020 44%,
+    white 44%,
+    white 56%,
+    #ce0020 56%,
+    #ce0020 70%,
+    transparent 70%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s cubic-bezier(0.18, 0.2, 0.32, 1.2);
+  border-radius: 50%;
+}
+
+#captain div:before {
+  content: "★";
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 60px;
+  margin-top: -4px;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+#captain div:after {
+  width: 99%;
+  height: 99%;
+  border-radius: 100%;
+  background: linear-gradient(45deg, transparent 35%, rgba(255, 255, 255, 0.3) 50%, transparent 65%, transparent 100%)
+      center / 99% 99%,
+    linear-gradient(-45deg, transparent 35%, rgba(255, 255, 255, 0.3) 50%, transparent 65%, transparent 100%) center /
+      99% 99%,
+    linear-gradient(90deg, transparent 35%, rgba(0, 0, 0, 0.15) 50%, transparent 65%, transparent 100%) center / 99% 99%,
+    linear-gradient(180deg, transparent 35%, rgba(0, 0, 0, 0.15) 50%, transparent 65%, transparent 100%) center / 99%
+      99%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#captain div:hover {
+  transform: rotate(360deg);
 }
