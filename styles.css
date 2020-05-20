@@ -386,6 +386,7 @@ body {
   height: 120px;
   border: 5px solid #010101;
   border-radius: 50%;
+  margin-top: -40px;
   background: radial-gradient(circle at 39% 66%, transparent 5%, #010101 6%, #010101 8%, transparent 9%),
     radial-gradient(circle at 61% 66%, transparent 5%, #010101 6%, #010101 8%, transparent 9%),
     linear-gradient(to bottom, #010101, #010101) center 73% / 27px 3px,
@@ -424,4 +425,151 @@ body {
 
 #light div:hover {
   box-shadow: 0 -30px 120px 10px #fffacd, inset 3px 3px 0px 0px rgba(255, 250, 205, 0.5);
+}
+
+/* ________ Pictures styles ________ */
+
+#picture1 {
+  background-color: #ddd;
+}
+
+#picture2 {
+  background-color: #ccc;
+}
+
+#picture3 {
+  background-color: #aaa;
+}
+
+.picture div {
+  width: 220px;
+  height: 160px;
+  border: solid 20px #eee;
+  border-top-color: #ddd;
+  border-right-color: #eee;
+  border-bottom-color: #fff;
+  border-left-color: #eee;
+  border-radius: 2px;
+  background: linear-gradient(45deg, black, black) center / 75% 66%;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-origin: top left;
+  background-attachment: fixed;
+}
+
+.picture div:before {
+  border-radius: 2px;
+  bottom: -9px;
+  left: -9px;
+  right: -9px;
+  top: -9px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.picture div:after {
+  border-radius: 2px;
+  bottom: -11px;
+  left: -11px;
+  right: -11px;
+  top: -11px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.picture div:hover {
+  transform: rotate(4deg);
+}
+
+#picture1 div {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 1em, silver 1em, silver 50%),
+    repeating-linear-gradient(45deg, slategray, slategray 1em, white 1em, white 50%);
+  background-size: 3em 3em, 2em 2em;
+}
+
+#picture2 div {
+  background-color: silver;
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      silver 24%,
+      white 24%,
+      white 28%,
+      silver 28%,
+      silver 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      silver 24%,
+      white 24%,
+      white 28%,
+      silver 28%,
+      silver 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      white 10%,
+      silver 10%,
+      silver 23%,
+      white 23%,
+      white 30%,
+      silver 30%,
+      silver 43%,
+      white 43%,
+      white 50%,
+      silver 50%,
+      silver 63%,
+      white 63%,
+      white 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      white 5%,
+      silver 5%,
+      silver 15%,
+      white 15%,
+      white 20%,
+      silver 20%,
+      silver 29%,
+      white 29%,
+      white 34%,
+      silver 34%,
+      silver 44%,
+      white 44%,
+      white 49%,
+      transparent 49%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      white 5%,
+      silver 5%,
+      silver 15%,
+      white 15%,
+      white 20%,
+      silver 20%,
+      silver 29%,
+      white 29%,
+      white 34%,
+      silver 34%,
+      silver 44%,
+      white 44%,
+      white 49%,
+      transparent 49%,
+      transparent
+    );
+  background-size: 40px 20px;
+}
+
+#picture3 div {
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 1em, silver 1em, silver 50%),
+    repeating-linear-gradient(45deg, #111626, #111626 1em, #888 1em, #888 50%);
+  background-size: 3em 3em, 2em 2em;
 }
