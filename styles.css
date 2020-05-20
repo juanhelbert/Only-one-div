@@ -248,7 +248,7 @@ body {
 /* ________ Dice styles ________ */
 
 #dice {
-  background-color: #f8ed62;
+  background-color: #d1d1d1;
 }
 
 #dice div {
@@ -322,8 +322,7 @@ body {
 /* ________ Captain styles ________ */
 
 #captain {
-  /* background-color: #dab600; */
-  background-color: #e9d700;
+  background-color: #c1c1c1;
 }
 
 #captain div {
@@ -374,4 +373,55 @@ body {
 
 #captain div:hover {
   transform: rotate(360deg);
+}
+
+/* ________ Light styles ________ */
+
+#light {
+  background-color: #a1a1a1;
+}
+
+#light div {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #010101;
+  border-radius: 50%;
+  background: radial-gradient(circle at 39% 66%, transparent 5%, #010101 6%, #010101 8%, transparent 9%),
+    radial-gradient(circle at 61% 66%, transparent 5%, #010101 6%, #010101 8%, transparent 9%),
+    linear-gradient(to bottom, #010101, #010101) center 73% / 27px 3px,
+    linear-gradient(#010101, #010101) 45% 100% / 3px 35px, linear-gradient(#010101, #010101) 55% 100% / 3px 35px;
+  box-shadow: inset 3px 3px 0px 0px rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+}
+
+#light div:before {
+  width: 54px;
+  height: 40px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: -38px;
+  border: 5px solid #010101;
+  border-top: none;
+  border-radius: 6px;
+  background: linear-gradient(#010101, #010101) 20px 0 / 3px, linear-gradient(#010101, #010101) 31px 0 / 3px,
+    linear-gradient(#a1a1a1, #a1a1a1) 0 / 100%;
+  background-repeat: no-repeat;
+}
+
+#light div:after {
+  width: 64px;
+  height: 24px;
+  bottom: -45px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 2px;
+  box-shadow: inset 0px 4px #d0d0d0, inset 0px 8px #454545, inset 0px 12px #d0d0d0, inset 0px 16px #454545,
+    inset 0px 20px #d0d0d0, inset 0 -4px #454545;
+  transform: skewY(-2deg);
+}
+
+#light div:hover {
+  box-shadow: 0 -30px 120px 10px #fffacd, inset 3px 3px 0px 0px rgba(255, 250, 205, 0.5);
 }
