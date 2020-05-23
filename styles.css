@@ -46,6 +46,25 @@ body {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
 @media only screen and (max-width: 991px) {
   .welcome span {
     font-size: 70px;
